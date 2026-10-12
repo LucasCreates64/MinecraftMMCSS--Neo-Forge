@@ -1,4 +1,4 @@
-package dev.girlboss.minecraftmmcss;
+package dev.lucascreates64.minecraftmmcss;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;

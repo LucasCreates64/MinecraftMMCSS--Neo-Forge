@@ -1,9 +1,9 @@
-package dev.girlboss.minecraftmmcss;
+package dev.lucascreates64.minecraftmmcss;
 
 import com.sun.jna.WString;
 import com.sun.jna.platform.win32.WinDef;
 import com.sun.jna.platform.win32.WinNT;
-import dev.girlboss.minecraftmmcss.util.LoggerInterface;
+import dev.lucascreates64.minecraftmmcss.util.LoggerInterface;
 import net.fabricmc.api.ClientModInitializer;
 
 public class MinecraftMMCSS implements ClientModInitializer {

@@ -1,4 +1,4 @@
-package dev.girlboss.minecraftmmcss.util;
+package dev.lucascreates64.minecraftmmcss.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
