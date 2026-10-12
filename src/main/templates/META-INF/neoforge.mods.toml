@@ -30,10 +30,10 @@ displayName="${mod_name}" #mandatory
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
+logoFile="icon.png" #optional
 
 # A text field displayed in the mod UI
-#credits="" #optional
+credits="arcaneconstructs(girlbossdev) for the original mod :D" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
 authors="LucasCreates64"
@@ -44,8 +44,8 @@ This is a Neoforge (Forge to be supported) fork of MinecraftMMCS, by arcaneconst
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
-[[mixins]]
-config="${mod_id}.mixins.json"
+#[[mixins]]
+#config="${mod_id}.mixins.json"
 
 # The [[accessTransformers]] block allows you to declare where your AT file is.
 # If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
@@ -71,7 +71,7 @@ versionRange="[${neo_version},)" #mandatory
 # AFTER - This mod is loaded AFTER the dependency
 ordering="NONE"
 # Side this dependency is applied on - BOTH, CLIENT, or SERVER
-side="BOTH"
+side="CLIENT"
 
 # Here's another dependency
 [[dependencies.${mod_id}]]

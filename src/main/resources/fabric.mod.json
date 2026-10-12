@@ -21,7 +21,7 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "dev.girlboss.minecraftmmcss.MinecraftMMCSS"
+      "dev.lucascreates64.minecraftmmcss.MinecraftMMCSS"
     ]
   },
   "depends": {
