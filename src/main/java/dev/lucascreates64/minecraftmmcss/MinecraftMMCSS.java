@@ -5,16 +5,19 @@ import com.sun.jna.platform.win32.WinDef;
 import com.sun.jna.platform.win32.WinNT;
 import dev.lucascreates64.minecraftmmcss.util.LoggerInterface;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.Mod;
 
 
+@Mod("windows-priority-booster")
 public class MinecraftMMCSS{
     public MinecraftMMCSS(IEventBus modEventBus){
-        modEventBus.addListener(this::setThread);
+        modEventBus.addListener(this::commonSetup);
     }
 
-    private void setThread(final FMLClientSetupEvent event){
+    private void commonSetup(final FMLCommonSetupEvent event){
         event.enqueueWork(() -> {
+
             if (!System.getProperty("os.name").contains("Windows")) {
                 return;
             }
