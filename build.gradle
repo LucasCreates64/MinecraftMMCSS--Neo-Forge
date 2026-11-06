@@ -27,7 +27,7 @@ sourceSets.main.resources {
 }
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
+    mavenCentral()
 }
 
 base {
@@ -112,12 +112,11 @@ neoForge {
 // a dependency that will be present for runtime testing but that is
 // "optional", meaning it will not be pulled by dependents of this mod.
 configurations {
-    runtimeClasspath.extendsFrom localRuntime
+
 }
 
 dependencies {
-    jarJar(libs.jna)
-    jarJar(libs.jna.platform)
+
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -158,8 +157,8 @@ publishing {
     }
 }
 
-tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+tasks.withType(Jar).configureEach {
+    archiveBaseName = "WindowsPriorityBoost"
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
