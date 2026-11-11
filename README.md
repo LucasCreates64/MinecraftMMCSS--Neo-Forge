@@ -1,5 +1,5 @@
 # Windows Priority Boost (Unofficial (Neo)Forge port)
-## Credit goes to [arcaneconstructs](https://github.com/arcaneconstructs)
+## Credit goes to [arcaneconstructs](https://github.com/arcaneconstructs) for the [original](https://github.com/arcaneconstructs/MinecraftMMCSS) mod!
 
 Registers Minecraft's main thread as a game with [MMCSS](https://learn.microsoft.com/en-us/windows/win32/procthread/multimedia-class-scheduler-service) on Windows. Depending on your system, this can substantially reduce lag spikes and stutters, as well as improve smoothness, not just in Minecraft but of the entire machine while multitasking.  
 
